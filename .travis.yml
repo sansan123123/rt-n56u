@@ -37,7 +37,7 @@ after_script:
 - curl -m 120 -F file=@${image_name}.7z https://file.io/?expires=3d ; echo
 env:
   jobs:
-  - build_variant=mt7621 targets= RM2100"
+  - build_variant=XY-C1"
   global:
   - toolchain_pkg="aarch64_mipsel-linux-uclibc.tar.xz"
   - toolchain_url="https://github.com/hanwckf/padavan-toolchain/releases/download/v1.1/$toolchain_pkg"
